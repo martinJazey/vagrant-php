@@ -1,1 +1,3 @@
 .vagrant/
+confs/gitconfig.cnf
+sshkey
