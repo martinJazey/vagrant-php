@@ -23,3 +23,7 @@ cp confs/mysql.conf /etc/mysql/my.cnf
 # config apache
 cp confs/apache.conf /etc/apache2/sites-enabled/000-default
 /etc/init.d/apache2 restart
+
+# timezone
+echo "Europe/Vienna" > /etc/timezone
+dpkg-reconfigure -f noninteractive tzdata
