@@ -22,6 +22,10 @@ cp confs/mysql.conf /etc/mysql/my.cnf
 
 # config apache
 cp confs/apache.conf /etc/apache2/sites-enabled/000-default
+
+# config apache php.ini
+cp apache.php.conf /etc/php5/apache2/php.ini
+
 /etc/init.d/apache2 restart
 
 # timezone
