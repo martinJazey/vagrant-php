@@ -28,6 +28,9 @@
 
 /etc/init.d/apache2 restart
 
+# git
+/bin/cp git-completion.bash /home/vagrant/.git-completion.bash
+
 # timezone
 /bin/echo "Europe/Vienna" > /etc/timezone
 /usr/sbin/dpkg-reconfigure -f noninteractive tzdata
