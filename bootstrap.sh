@@ -29,7 +29,7 @@
 /etc/init.d/apache2 restart
 
 # git
-/bin/cp git-completion.bash /home/vagrant/.git-completion.bash
+/bin/cp confs/git-completion.bash /home/vagrant/.git-completion.bash
 
 # timezone
 /bin/echo "Europe/Vienna" > /etc/timezone
