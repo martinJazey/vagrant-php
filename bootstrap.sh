@@ -4,7 +4,7 @@
 /bin/echo "mysql-server-5.5 mysql-server/root_password_again password root" | /usr/bin/debconf-set-selections
 /bin/echo "mysql-server-5.5 mysql-server/root_password password root" | /usr/bin/debconf-set-selections
 /usr/bin/aptitude update
-/usr/bin/aptitude install -y mysql-server mysql-client nginx php5-fpm vim php5-curl phpunit php5-mysql php-apc git php5-gd drush libapache2-mod-php5 phpmyadmin
+/usr/bin/aptitude install -y mysql-server mysql-client nginx php5-fpm vim php5-curl phpunit php5-mysql php-apc git php5-gd drush libapache2-mod-php5
 
 # config nginx
 /bin/cp confs/nginx.conf /etc/nginx/sites-available/default
