@@ -25,8 +25,7 @@
 
 # config apache php.ini
 /bin/cp confs/apache.php.conf /etc/php5/apache2/php.ini
-
-/etc/init.d/apache2 restart
+/etc/init.d/apache2 reload
 
 # git
 /bin/cp confs/git-completion.bash /home/vagrant/.git-completion.bash
