@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "chef/debian-7.4"
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.network :forwarded_port, host: 1280, guest: 80
+  config.vm.network :forwarded_port, host: 1281, guest: 8000
   config.vm.hostname = "vagrantphp"
   config.vm.synced_folder "/Users/"+user+"/www/", "/home/vagrant/www"
   config.vm.synced_folder "/Users/"+user+"/vagrant/share/", "/home/vagrant/share/"
